@@ -851,7 +851,7 @@ footer img{
 
 }
 
-@media(max-width: 420px){
+@media(max-width: 600px){
 
     #language-selector {
         position: fixed;
