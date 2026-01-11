@@ -67,11 +67,68 @@ const projects = [
   }
 ];
 
+let translations = {};
+
+function getNestedTranslation(obj, path) {
+
+  return path.split('.').reduce((prev, curr) => prev && prev[curr], obj);
+
+}
+
+function changeLanguage(lang) {
+
+  localStorage.setItem('preferredLanguage', lang);
+
+  document.documentElement.lang = lang;
+  
+  document.querySelectorAll('[data-i18n]').forEach(element => {
+    const key = element.getAttribute('data-i18n');
+    const translation = getNestedTranslation(translations[lang], key);
+    if (translation) {
+      element.textContent = translation;
+    }
+  });
+  
+  document.querySelectorAll('[data-i18n-placeholder]').forEach(element => {
+    const key = element.getAttribute('data-i18n-placeholder');
+    const translation = getNestedTranslation(translations[lang], key);
+    if (translation) {
+      element.placeholder = translation;
+    }
+  });
+  
+  document.querySelectorAll('.lang-btn').forEach(btn => {
+    btn.classList.remove('active');
+    if (btn.getAttribute('data-lang') === lang) {
+      btn.classList.add('active');
+    }
+  });
+}
+
+async function loadTranslations() {
+  try {
+    const response = await fetch('assets/languages/text.json');
+    translations = await response.json();
+    
+    const savedLang = localStorage.getItem('preferredLanguage') || 'es';
+    changeLanguage(savedLang);
+    
+    document.querySelectorAll('.lang-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const lang = btn.getAttribute('data-lang');
+        changeLanguage(lang);
+      });
+    });
+  } catch (error) {
+    console.error('Error cargando traducciones:', error);
+  }
+}
 
 document.addEventListener("DOMContentLoaded", () => {
 
     document.getElementById("year").textContent = new Date().getFullYear()
     renderProjects()
+    loadTranslations()
 
 })
 
@@ -244,3 +301,41 @@ links.forEach(l => {
     })
 
 })
+
+const form = document.getElementById('contact-form');
+const modalSuccess = document.getElementById('modal-success');
+const modalError = document.getElementById('modal-error');
+
+function openModal(modal) {
+    modal.style.display = "flex";
+}
+
+document.querySelectorAll('.modal .close').forEach(span => {
+    span.addEventListener('click', () => {
+        span.parentElement.parentElement.style.display = "none";
+    });
+});
+
+window.addEventListener('click', (e) => {
+    if(e.target.classList.contains('modal')) {
+        e.target.style.display = "none";
+    }
+});
+
+form.addEventListener('submit', (e) => {
+    e.preventDefault();
+
+    fetch('/', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: new URLSearchParams(new FormData(form)).toString()
+    })
+    .then(() => {
+        form.reset();
+        openModal(modalSuccess);
+    })
+    .catch((error) => {
+        console.error(error);
+        openModal(modalError);
+    });
+});

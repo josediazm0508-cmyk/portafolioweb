@@ -1,0 +1,293 @@
+{
+  "es": {
+    "nav": {
+      "home": "Inicio",
+      "about": "Sobre mí",
+      "projects": "Proyectos",
+      "contact": "Contacto"
+    },
+    "hero": {
+      "greeting": "Hola 👋",
+      "name": "Soy Jose Diaz",
+      "title": "Desarrollador Frontend",
+      "description": "Creo experiencias web modernas y responsivas. Viviendo en Colombia, actualmente disponible para proyectos.",
+      "viewWork": "Ver mi trabajo",
+      "contactMe": "Contáctame"
+    },
+    "about": {
+      "title": "Sobre mí",
+      "description": "¡Hola! Soy Jose, un desarrollador frontend de Popayán, Colombia. Creo sitios web limpios y responsivos enfocados en claridad, velocidad y usabilidad. Principalmente trabajo con HTML, CSS y JavaScript para construir landing pages y sitios web para pequeñas empresas. Actualmente estudiando Ingeniería de Sistemas y mejorando continuamente mis habilidades. Disponible para proyectos freelance.",
+      "skillsTitle": "Habilidades"
+    },
+    "skills": {
+      "html": {
+        "name": "HTML5",
+        "description": "Estructura semántica"
+      },
+      "css": {
+        "name": "CSS3",
+        "description": "Diseños responsivos"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "description": "DOM e interactividad"
+      },
+      "git": {
+        "name": "Git & GitHub",
+        "description": "Control de versiones"
+      },
+      "netlify": {
+        "name": "Netlify",
+        "description": "Despliegue de proyectos"
+      }
+    },
+    "projects": {
+      "title": "Proyectos Destacados"
+    },
+    "contact": {
+      "title": "Trabajemos Juntos",
+      "subtitle": "¿Tienes un proyecto en mente? ¡Construyamos algo increíble!",
+      "formTitle": "Formulario",
+      "namePlaceholder": "Nombre",
+      "emailPlaceholder": "Correo",
+      "messagePlaceholder": "Mensaje",
+      "sendButton": "Enviar Mensaje"
+    },
+    "footer": {
+      "builtBy": "Construido por DogDev ©",
+      "madeIn": "Hecho en Popayán, Colombia"
+    },
+    "education": {
+      "title": "Educación y Formación",
+      "university": {
+        "title": "Ingeniería de Sistemas",
+        "institution": "Universidad del Cauca",
+        "date": "En curso"
+      },
+      "sena": {
+        "title": "Técnico en Programación de Aplicaciones y Servicios para la Nube",
+        "institution": "SENA",
+        "date": "Completado"
+      },
+      "highschool": {
+        "title": "Bachiller Técnico en Programación de Software",
+        "institution": "Institución Educativa",
+        "date": "Graduado"
+      }
+    },
+    "services": {
+      "title": "Mis Servicios",
+      "subtitle": "Soluciones web profesionales para tu negocio",
+      "popular": "Más popular",
+      "priceFrom": "Desde",
+      "quoteButton": "Solicitar cotización",
+      "landing": {
+        "name": "Landing Page",
+        "description": "Página web de una sola página perfecta para promocionar tu producto, servicio o evento. Diseño moderno y optimizado para conversiones.",
+        "feature1": "✓ Diseño responsivo",
+        "feature2": "✓ Formulario de contacto",
+        "feature3": "✓ Optimización SEO básica",
+        "feature4": "✓ Integración redes sociales"
+      },
+      "website": {
+        "name": "Sitio Web Completo",
+        "description": "Página web multi-sección ideal para negocios, restaurantes o profesionales. Hasta 5 secciones completamente funcionales.",
+        "feature1": "✓ Hasta 5 secciones",
+        "feature2": "✓ Galería de imágenes",
+        "feature3": "✓ Formulario de contacto",
+        "feature4": "✓ Google Maps integrado",
+        "feature5": "✓ Botón WhatsApp flotante"
+      },
+      "ecommerce": {
+        "name": "Tienda Online Básica",
+        "description": "Tienda online funcional con catálogo de productos, carrito de compras y sistema de pedidos vía WhatsApp.",
+        "feature1": "✓ Catálogo de productos",
+        "feature2": "✓ Carrito de compras",
+        "feature3": "✓ Pedidos por WhatsApp",
+        "feature4": "✓ Panel de administración",
+        "feature5": "✓ Categorías y filtros"
+      },
+      "maintenance": {
+        "name": "Mantenimiento Web",
+        "description": "Actualización y soporte continuo para tu sitio web. Cambios de contenido, imágenes y pequeñas mejoras mensuales.",
+        "priceLabel": "Mensual",
+        "feature1": "✓ Actualizaciones de contenido",
+        "feature2": "✓ Cambio de imágenes",
+        "feature3": "✓ Corrección de errores",
+        "feature4": "✓ Soporte vía WhatsApp"
+      },
+      "extras": {
+        "title": "Servicios Adicionales",
+        "domain": "📌 Registro de dominio (.com, .co)",
+        "hosting": "🌐 Hosting y despliegue",
+        "ssl": "🔒 Certificado SSL (HTTPS)",
+        "training": "📖 Capacitación básica"
+      },
+      "process": {
+        "title": "¿Cómo trabajo?",
+        "step1": {
+          "title": "Conversación inicial",
+          "description": "Hablamos de tu proyecto y necesidades sin compromiso"
+        },
+        "step2": {
+          "title": "Propuesta y cotización",
+          "description": "Te envío un plan detallado con precio final"
+        },
+        "step3": {
+          "title": "Desarrollo",
+          "description": "Creo tu sitio web con actualizaciones constantes"
+        },
+        "step4": {
+          "title": "Entrega y lanzamiento",
+          "description": "Tu sitio web online y listo para recibir clientes"
+        }
+      }
+    }
+  },
+  "en": {
+    "nav": {
+      "home": "Home",
+      "about": "About",
+      "projects": "Projects",
+      "contact": "Contact"
+    },
+    "hero": {
+      "greeting": "Hi 👋",
+      "name": "I'm Jose Diaz",
+      "title": "Frontend Developer",
+      "description": "I build modern, responsive web experiences. Based in Colombia, currently available for projects.",
+      "viewWork": "View My Work",
+      "contactMe": "Contact me"
+    },
+    "about": {
+      "title": "About Me",
+      "description": "Hi! I'm Jose, a frontend developer from Popayán, Colombia. I create clean, responsive websites focused on clarity, speed, and usability. I mainly work with HTML, CSS, and JavaScript to build landing pages and small business websites. Currently studying Systems Engineering and continuously improving my skills. Available for freelance projects.",
+      "skillsTitle": "Skills"
+    },
+    "skills": {
+      "html": {
+        "name": "HTML5",
+        "description": "Semantic structure"
+      },
+      "css": {
+        "name": "CSS3",
+        "description": "Responsive layouts"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "description": "DOM & interactivity"
+      },
+      "git": {
+        "name": "Git & GitHub",
+        "description": "Version control"
+      },
+      "netlify": {
+        "name": "Netlify",
+        "description": "Project deployment"
+      }
+    },
+    "projects": {
+      "title": "Featured Projects"
+    },
+    "contact": {
+      "title": "Let's Work Together",
+      "subtitle": "Have a project in mind? Let's build something amazing!",
+      "formTitle": "Form",
+      "namePlaceholder": "Name",
+      "emailPlaceholder": "Email",
+      "messagePlaceholder": "Message",
+      "sendButton": "Send Message"
+    },
+    "footer": {
+      "builtBy": "Built by DogDev ©",
+      "madeIn": "Made in Popayán, Colombia"
+    },
+    "education": {
+      "title": "Education & Training",
+      "university": {
+        "title": "Systems Engineering",
+        "institution": "Universidad del Cauca",
+        "date": "In progress"
+      },
+      "sena": {
+        "title": "Technical Degree in Cloud Applications and Services Programming",
+        "institution": "SENA",
+        "date": "Completed"
+      },
+      "highschool": {
+        "title": "Technical High School Diploma in Software Programming",
+        "institution": "Educational Institution",
+        "date": "Graduated"
+      }
+    },
+    "services": {
+      "title": "My Services",
+      "subtitle": "Professional web solutions for your business",
+      "popular": "Most popular",
+      "priceFrom": "From",
+      "quoteButton": "Request quote",
+      "landing": {
+        "name": "Landing Page",
+        "description": "Single-page website perfect for promoting your product, service or event. Modern design optimized for conversions.",
+        "feature1": "✓ Responsive design",
+        "feature2": "✓ Contact form",
+        "feature3": "✓ Basic SEO optimization",
+        "feature4": "✓ Social media integration"
+      },
+      "website": {
+        "name": "Complete Website",
+        "description": "Multi-section website ideal for businesses, restaurants or professionals. Up to 5 fully functional sections.",
+        "feature1": "✓ Up to 5 sections",
+        "feature2": "✓ Image gallery",
+        "feature3": "✓ Contact form",
+        "feature4": "✓ Integrated Google Maps",
+        "feature5": "✓ Floating WhatsApp button"
+      },
+      "ecommerce": {
+        "name": "Basic Online Store",
+        "description": "Functional online store with product catalog, shopping cart and WhatsApp ordering system.",
+        "feature1": "✓ Product catalog",
+        "feature2": "✓ Shopping cart",
+        "feature3": "✓ WhatsApp orders",
+        "feature4": "✓ Admin panel",
+        "feature5": "✓ Categories and filters"
+      },
+      "maintenance": {
+        "name": "Web Maintenance",
+        "description": "Continuous updates and support for your website. Content changes, images and small monthly improvements.",
+        "priceLabel": "Monthly",
+        "feature1": "✓ Content updates",
+        "feature2": "✓ Image changes",
+        "feature3": "✓ Bug fixes",
+        "feature4": "✓ WhatsApp support"
+      },
+      "extras": {
+        "title": "Additional Services",
+        "domain": "📌 Domain registration (.com, .co)",
+        "hosting": "🌐 Hosting and deployment",
+        "ssl": "🔒 SSL Certificate (HTTPS)",
+        "training": "📖 Basic training"
+      },
+      "process": {
+        "title": "How do I work?",
+        "step1": {
+          "title": "Initial conversation",
+          "description": "We talk about your project and needs without commitment"
+        },
+        "step2": {
+          "title": "Proposal and quote",
+          "description": "I send you a detailed plan with final price"
+        },
+        "step3": {
+          "title": "Development",
+          "description": "I create your website with constant updates"
+        },
+        "step4": {
+          "title": "Delivery and launch",
+          "description": "Your website online and ready to receive clients"
+        }
+      }
+    }
+  }
+    
+}

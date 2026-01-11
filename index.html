@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -23,80 +23,233 @@
         <i class="bi bi-list" id="menuhamburguesa"></i>
 
         <div id="sectionsdiv">
-            <a href="index.html">Home</a>
-            <a href="#about">About</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
+            <a href="index.html" data-i18n="nav.home">Inicio</a>
+            <a href="#about" data-i18n="nav.about">Sobre mí</a>
+            <a href="#projects" data-i18n="nav.projects">Proyectos</a>
+            <a href="#contact" data-i18n="nav.contact">Contacto</a>
+        </div>
+
+        <div id="language-selector">
+            <button class="lang-btn active" data-lang="es">ES</button>
+            <button class="lang-btn" data-lang="en">EN</button>
         </div>
     </nav>
 
     <div id="content">
         <div id="hero">
             <div id="infopri">
-                <h2>Hi 👋</h2>
-                <h1>I'm Jose Diaz</h1>
-                <h2>Frontend Developer</h2>
-                <h4>I build modern, responsive web experiences. Based in Colombia, currently available for projects.</h4>
+                <h2 data-i18n="hero.greeting">Hola 👋</h2>
+                <h1 data-i18n="hero.name">Soy Jose Diaz</h1>
+                <h2 data-i18n="hero.title">Desarrollador Frontend</h2>
+                <h4 data-i18n="hero.description">Creo experiencias web modernas y responsivas. Basado en Colombia, actualmente disponible para proyectos.</h4>
             </div>
             <div>
-                <a href="#projects"><button>View My Work</button></a>
-                <a href="#contact"><button>Contact me</button></a>
+                <a href="#projects"><button data-i18n="hero.viewWork">Ver mi trabajo</button></a>
+                <a href="#contact"><button data-i18n="hero.contactMe">Contáctame</button></a>
             </div>
         </div>
         <div id="about">
-            <h2 class="subtitle">About Me</h2>
+            <h2 class="subtitle" data-i18n="about.title">Sobre mí</h2>
             <div id="informationabout">
                 <img src="assets/images/dogdev.png" alt="Imagen logotipo DogDev">
-                <p>Hi! I'm Jose, a frontend developer from Popayán, Colombia. I create clean, responsive websites focused on clarity, speed, and usability. I mainly work with HTML, CSS, and JavaScript to build landing pages and small business websites. Currently studying Systems Engineering and continuously improving my skills. Available for freelance projects.</p>
+                <p data-i18n="about.description">¡Hola! Soy Jose, un desarrollador frontend de Popayán, Colombia. Creo sitios web limpios y responsivos enfocados en claridad, velocidad y usabilidad. Principalmente trabajo con HTML, CSS y JavaScript para construir landing pages y sitios web para pequeñas empresas. Actualmente estudiando Ingeniería de Sistemas y mejorando continuamente mis habilidades. Disponible para proyectos freelance.</p>
             </div>
-            <h2 class="subtitle">Skills</h2>
+
+            <h3 class="section-heading" data-i18n="education.title">Educación y Formación</h3>
+            <div id="education-list">
+                <div class="education-item">
+                    <div class="education-icon">🎓</div>
+                    <div class="education-content">
+                        <h4 data-i18n="education.university.title">Ingeniería de Sistemas</h4>
+                        <p class="education-institution" data-i18n="education.university.institution">Universidad del Cauca</p>
+                        <p class="education-date" data-i18n="education.university.date">En curso</p>
+                    </div>
+                </div>
+
+                <div class="education-item">
+                    <div class="education-icon">💻</div>
+                    <div class="education-content">
+                        <h4 data-i18n="education.sena.title">Técnico en Programación de Aplicaciones y Servicios para la Nube</h4>
+                        <p class="education-institution" data-i18n="education.sena.institution">SENA</p>
+                        <p class="education-date" data-i18n="education.sena.date">Completado</p>
+                    </div>
+                </div>
+
+                <div class="education-item">
+                    <div class="education-icon">📚</div>
+                    <div class="education-content">
+                        <h4 data-i18n="education.highschool.title">Bachiller Técnico en Programación de Software</h4>
+                        <p class="education-institution" data-i18n="education.highschool.institution">Institución Educativa</p>
+                        <p class="education-date" data-i18n="education.highschool.date">Graduado</p>
+                    </div>
+                </div>
+            </div>
+
+            <h2 class="subtitle" data-i18n="about.skillsTitle">Habilidades</h2>
             <div id="skillsdiv">
                 <div>
                     <i class="devicon-html5-plain-wordmark colored"></i>
-                    <h3>HTML5</h3>
-                    <p>Semantic structure</p>
+                    <h3 data-i18n="skills.html.name">HTML5</h3>
+                    <p data-i18n="skills.html.description">Estructura semántica</p>
                 </div>
                 <div>
                     <i class="devicon-css3-plain-wordmark colored"></i>
-                    <h3>CSS3</h3>
-                    <p>Responsive layouts</p>
+                    <h3 data-i18n="skills.css.name">CSS3</h3>
+                    <p data-i18n="skills.css.description">Diseños responsivos</p>
                 </div>
                 <div>
                     <i class="devicon-javascript-plain colored"></i>
-                    <h3>JavaScript</h3>
-                    <p>DOM & interactivity</p>
+                    <h3 data-i18n="skills.javascript.name">JavaScript</h3>
+                    <p data-i18n="skills.javascript.description">DOM e interactividad</p>
                 </div>
                 <div>
                     <i class="devicon-github-original"></i>
-                    <h3>Git & GitHub</h3>
-                    <p>Version control</p>
+                    <h3 data-i18n="skills.git.name">Git & GitHub</h3>
+                    <p data-i18n="skills.git.description">Control de versiones</p>
                 </div>
                 <div>
                     <i class="devicon-netlify-plain colored"></i>
-                    <h3>Netlify</h3>
-                    <p>Project deployment</p>
+                    <h3 data-i18n="skills.netlify.name">Netlify</h3>
+                    <p data-i18n="skills.netlify.description">Despliegue de proyectos</p>
                 </div>
             </div>
         </div>
+
+        <section id="services">
+            <h2 class="subtitle" data-i18n="services.title">Mis Servicios</h2>
+            <p class="services-subtitle" data-i18n="services.subtitle">Soluciones web profesionales para tu negocio</p>
+            
+            <div id="services-grid">
+                <!-- Servicio 1: Landing Page -->
+                <div class="service-card">
+                    <div class="service-icon">📄</div>
+                    <h3 data-i18n="services.landing.name">Landing Page</h3>
+                    <p class="service-description" data-i18n="services.landing.description">Página web de una sola página perfecta para promocionar tu producto, servicio o evento. Diseño moderno y optimizado para conversiones.</p>
+                    <ul class="service-features">
+                        <li data-i18n="services.landing.feature1">✓ Diseño responsivo</li>
+                        <li data-i18n="services.landing.feature2">✓ Formulario de contacto</li>
+                        <li data-i18n="services.landing.feature3">✓ Optimización SEO básica</li>
+                        <li data-i18n="services.landing.feature4">✓ Integración redes sociales</li>
+                    </ul>
+                    <div class="service-price">
+                        <span class="price-label" data-i18n="services.priceFrom">Desde</span>
+                        <span class="price-amount">$200.000</span>
+                        <span class="price-currency">COP</span>
+                    </div>
+                    <a href="#contact"><button class="service-btn" data-i18n="services.quoteButton">Solicitar cotización</button></a>
+                </div>
+
+                <!-- Servicio 2: Sitio Web Completo -->
+                <div class="service-card featured">
+                    <div class="featured-badge" data-i18n="services.popular">Más popular</div>
+                    <div class="service-icon">🌐</div>
+                    <h3 data-i18n="services.website.name">Sitio Web Completo</h3>
+                    <p class="service-description" data-i18n="services.website.description">Página web multi-sección ideal para negocios, restaurantes o profesionales. Hasta 5 secciones completamente funcionales.</p>
+                    <ul class="service-features">
+                        <li data-i18n="services.website.feature1">✓ Hasta 5 secciones</li>
+                        <li data-i18n="services.website.feature2">✓ Galería de imágenes</li>
+                        <li data-i18n="services.website.feature3">✓ Formulario de contacto</li>
+                        <li data-i18n="services.website.feature4">✓ Google Maps integrado</li>
+                        <li data-i18n="services.website.feature5">✓ Botón WhatsApp flotante</li>
+                    </ul>
+                    <div class="service-price">
+                        <span class="price-label" data-i18n="services.priceFrom">Desde</span>
+                        <span class="price-amount">$650.000</span>
+                        <span class="price-currency">COP</span>
+                    </div>
+                    <a href="#contact"><button class="service-btn" data-i18n="services.quoteButton">Solicitar cotización</button></a>
+                </div>
+
+                <!-- Servicio 3: E-commerce Básico -->
+                <div class="service-card">
+                    <div class="service-icon">🛒</div>
+                    <h3 data-i18n="services.ecommerce.name">Tienda Online Básica</h3>
+                    <p class="service-description" data-i18n="services.ecommerce.description">Tienda online funcional con catálogo de productos, carrito de compras y sistema de pedidos vía WhatsApp.</p>
+                    <ul class="service-features">
+                        <li data-i18n="services.ecommerce.feature1">✓ Catálogo de productos</li>
+                        <li data-i18n="services.ecommerce.feature2">✓ Carrito de compras</li>
+                        <li data-i18n="services.ecommerce.feature3">✓ Pedidos por WhatsApp</li>
+                        <li data-i18n="services.ecommerce.feature4">✓ Panel de administración</li>
+                        <li data-i18n="services.ecommerce.feature5">✓ Categorías y filtros</li>
+                    </ul>
+                    <div class="service-price">
+                        <span class="price-label" data-i18n="services.priceFrom">Desde</span>
+                        <span class="price-amount">$800.000</span>
+                        <span class="price-currency">COP</span>
+                    </div>
+                    <a href="#contact"><button class="service-btn" data-i18n="services.quoteButton">Solicitar cotización</button></a>
+                </div>
+
+                <!-- Servicio 4: Mantenimiento -->
+                <div class="service-card">
+                    <div class="service-icon">⚡</div>
+                    <h3 data-i18n="services.maintenance.name">Mantenimiento Web</h3>
+                    <p class="service-description" data-i18n="services.maintenance.description">Actualización y soporte continuo para tu sitio web. Cambios de contenido, imágenes y pequeñas mejoras mensuales.</p>
+                    <ul class="service-features">
+                        <li data-i18n="services.maintenance.feature1">✓ Actualizaciones de contenido</li>
+                        <li data-i18n="services.maintenance.feature2">✓ Cambio de imágenes</li>
+                        <li data-i18n="services.maintenance.feature3">✓ Corrección de errores</li>
+                        <li data-i18n="services.maintenance.feature4">✓ Soporte vía WhatsApp</li>
+                    </ul>
+                    <div class="service-price">
+                        <span class="price-label" data-i18n="services.maintenance.priceLabel">Mensual</span>
+                        <span class="price-amount">$50.000</span>
+                        <span class="price-currency">COP/mes</span>
+                    </div>
+                    <a href="#contact"><button class="service-btn" data-i18n="services.quoteButton">Solicitar cotización</button></a>
+                </div>
+            </div>
+
+            <!-- Proceso de trabajo -->
+            <div class="work-process">
+                <h3 data-i18n="services.process.title">¿Cómo trabajo?</h3>
+                <div class="process-steps">
+                    <div class="process-step">
+                        <div class="step-number">1</div>
+                        <h4 data-i18n="services.process.step1.title">Conversación inicial</h4>
+                        <p data-i18n="services.process.step1.description">Hablamos de tu proyecto y necesidades sin compromiso</p>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-number">2</div>
+                        <h4 data-i18n="services.process.step2.title">Propuesta y cotización</h4>
+                        <p data-i18n="services.process.step2.description">Te envío un plan detallado con precio final</p>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-number">3</div>
+                        <h4 data-i18n="services.process.step3.title">Desarrollo</h4>
+                        <p data-i18n="services.process.step3.description">Creo tu sitio web con actualizaciones constantes</p>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-number">4</div>
+                        <h4 data-i18n="services.process.step4.title">Entrega y lanzamiento</h4>
+                        <p data-i18n="services.process.step4.description">Tu sitio web online y listo para recibir clientes</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <section id="projects">
-            <h2 class="subtitle">Featured Projects</h2>
+            <h2 class="subtitle" data-i18n="projects.title">Proyectos Destacados</h2>
             <div id="divprojects"></div>
         </section>
         <div id="contact">
-            <h2 class="subtitle">Let's Work Together</h2>
-            <h3>Have a project in mind? Let's build something amazing!</h3>
-            <form action="">
-                <h4>Form</h4>
-                <input type="text" placeholder="Name">
-                <input type="text" placeholder="Email">
-                <textarea name="" id="" placeholder="Message"></textarea>
-                <button>Send Message</button>
+            <h2 class="subtitle" data-i18n="contact.title">Trabajemos Juntos</h2>
+            <h3 data-i18n="contact.subtitle">¿Tienes un proyecto en mente? ¡Construyamos algo increíble!</h3>
+            <form name="contact" method="POST" data-netlify="true" id="contact-form">
+                <h4 data-i18n="contact.formTitle">Formulario</h4>
+
+                <input type="hidden" name="form-name" value="contact">
+
+                <input type="text" name="name" data-i18n-placeholder="contact.namePlaceholder" placeholder="Nombre" required>
+                <input type="email" name="email" data-i18n-placeholder="contact.emailPlaceholder" placeholder="Correo" required>
+                <textarea name="message" id="message" data-i18n-placeholder="contact.messagePlaceholder" placeholder="Mensaje" required></textarea>
+                <button type="submit" data-i18n="contact.sendButton">Enviar Mensaje</button>
             </form>
         </div>
         <footer>
             <div>
                 <img src="assets/images/dogdev.png" alt="">
-                <p>Built by DogDev © <span id="year"></span></p>
+                <p><span data-i18n="footer.builtBy">Construido por DogDev ©</span> <span id="year"></span></p>
             </div>
             <div>
                 <a href=""><i class="devicon-github-original-wordmark"></i></a>
@@ -104,15 +257,29 @@
                 <a href=""><i class="bi bi-envelope-fill"></i></a>
             </div>
             <div>
-                <p>Made in Popayán, Colombia</p>
+                <p data-i18n="footer.madeIn">Hecho en Popayán, Colombia</p>
             </div>
         </footer>
     </div>
 
-    <div id="overlay">
+    <div id="overlay"></div>
 
+    <div id="modal-success" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>¡Mensaje enviado correctamente! :)</p>
+        </div>
     </div>
 
+    <!-- Modal de error -->
+    <div id="modal-error" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Error al enviar el mensaje. ❌ Por favor, intenta nuevamente :(</p>
+        </div>
+    </div>
+
+    <script src="assets/translations.js"></script>
     <script src="assets/logic.js"></script>
 </body>
 </html>
