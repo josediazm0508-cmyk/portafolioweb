@@ -221,3 +221,26 @@ function filterDifficulty(elemento){
     }
 
 }
+
+document.getElementById("menuhamburguesa").addEventListener("click", () => {
+    document.getElementById("overlay").style.display = "block";
+    document.getElementById("sectionsdiv").classList.add("show");
+});
+
+document.getElementById("overlay").addEventListener("click", () => {
+    document.getElementById("overlay").style.display = "none";
+    document.getElementById("sectionsdiv").classList.remove("show");
+});
+
+let links = document.querySelectorAll("#sectionsdiv a")
+
+links.forEach(l => {
+
+    l.addEventListener("click", () => {
+
+        document.getElementById("overlay").style.display = "none";
+        document.getElementById("sectionsdiv").classList.remove("show");
+
+    })
+
+})
