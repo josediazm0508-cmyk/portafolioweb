@@ -176,7 +176,7 @@ a{
 #skillsdiv{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    margin-top: 50px;
+    margin-top: 100px;
 }
 
 #skillsdiv div{
@@ -186,11 +186,18 @@ a{
     justify-content: center;
     margin-bottom: 30px;
     transition: 0.5s ease;
+    padding: 20px;
+}
+
+#skillsdiv p{
+    color: var(--txtsecondary-);
 }
 
 #skillsdiv div:hover{
     transform: translateY(-6px);
     transition: 0.5s ease;
+    border: solid 1px var(--accentprimary-);
+    box-shadow: 2px 2px 25px rgb(0, 234, 255, 0.3);
 }
 
 #skillsdiv h3{
