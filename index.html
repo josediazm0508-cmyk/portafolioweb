@@ -237,8 +237,11 @@
             <h3 data-i18n="contact.subtitle">¿Tienes un proyecto en mente? ¡Construyamos algo increíble!</h3>
             <form name="contact" method="POST" data-netlify="true" id="contact-form">
                 <h4 data-i18n="contact.formTitle">Formulario</h4>
-
                 <input type="hidden" name="form-name" value="contact">
+
+                 <p style="display: none;">
+                    <label>Don't fill this out if you're human: <input name="bot-field" /></label>
+                </p>
 
                 <input type="text" name="name" data-i18n-placeholder="contact.namePlaceholder" placeholder="Nombre" required>
                 <input type="email" name="email" data-i18n-placeholder="contact.emailPlaceholder" placeholder="Correo" required>
@@ -278,6 +281,13 @@
             <p>Error al enviar el mensaje. ❌ Por favor, intenta nuevamente :(</p>
         </div>
     </div>
+
+
+    <form name="contact" netlify netlify-honeypot="bot-field" hidden>
+        <input type="text" name="name" />
+        <input type="email" name="email" />
+        <textarea name="message"></textarea>
+    </form>
 
     <script src="assets/translations.js"></script>
     <script src="assets/logic.js"></script>
